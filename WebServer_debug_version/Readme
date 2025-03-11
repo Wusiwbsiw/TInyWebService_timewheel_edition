@@ -1,0 +1,17 @@
+  ```C++
+    // 建立yourdb库
+    create database yourdb;
+
+    // 创建user表
+    USE yourdb;
+    CREATE TABLE user(
+        name char(50) NULL,
+        id int NONULL;
+        passwd char(50) NULL
+    )ENGINE=InnoDB;
+
+    // 添加数据
+    INSERT INTO user(name, passwd) VALUES('name', 'passwd');
+
+
+sh ./build.sh
